@@ -1,0 +1,25 @@
+{
+  "ingredientPattern": "DS",
+  "ingredients": {
+    "D": {
+      "type": "block",
+      "code": "mc:dirtymetalpot-*-empty",
+      "name": "metal"
+    },
+    "S": {
+      "type": "item",
+      "code": "mc:steelwool",
+      "isTool": true,
+      "ToolDurabilityCost": 1
+    }
+  },
+  "width": 1,
+  "height": 2,
+  "shapeless": true,
+  "recipeGroup": 1,
+  "output": {
+    "type": "block",
+    "code": "mc:metalpot-{metal}-empty",
+    "quantity": 1
+  }
+}

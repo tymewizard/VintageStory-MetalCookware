@@ -1,0 +1,363 @@
+{
+  "code": "candlelabra",
+  "class": "BlockCandlelabra",
+  "entityClass": "BlockEntityCandlelabra",
+  "storageFlags": 257,
+  "behaviors": [
+    {
+      "name": "Lockable"
+    },
+    {
+      "name": "RightClickPickup"
+    }
+  ],
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "bismuth",
+        "brass",
+        "copper",
+        "cupronickel",
+        "nickel",
+        "electrum",
+        "gold",
+        "silver"
+      ]
+    },
+    {
+      "code": "orientation",
+      "states": [
+        "up"
+      ],
+      "loadFromProperties": "game:abstract/horizontalorientation"
+    }
+  ],
+  "shapebytype": {
+    "candlelabra-*-up": {
+      "base": "mc:block/metal/candlelabra-ground",
+      "rotateY": 90
+    },
+    "candlelabra-*-north": {
+      "base": "mc:block/metal/candlelabra-wall",
+      "rotateY": 90
+    },
+    "candlelabra-*-east": {
+      "base": "mc:block/metal/candlelabra-wall",
+      "rotateY": 0
+    },
+    "candlelabra-*-south": {
+      "base": "mc:block/metal/candlelabra-wall",
+      "rotateY": 270
+    },
+    "candlelabra-*-west": {
+      "base": "mc:block/metal/candlelabra-wall",
+      "rotateY": 180
+    }
+  },
+  "_comment": "Must declare textures so they get added to the block texture atlas",
+  "textures": {
+    "metal": {
+      "base": "game:block/metal/ingot/{metal}"
+    }
+  },
+  "heldRightTpIdleAnimation": "holdinglanternrighthand",
+  "heldLeftTpIdleAnimation": "holdinglanternlefthand",
+  "attributes": {
+    "reinforcable": true
+  },
+  "attributesByType": {
+    "*-up": {
+      "handbook": {
+        "include": true,
+        "groupBy": [
+          "candlelabra-*"
+        ]
+      },
+      "material": "{metal}"
+    },
+    "*": {
+      "handbook": {
+        "exclude": true
+      },
+      "material": "{metal}",
+      "shelvable": false
+    }
+  },
+  "creativeinventory": {},
+  "creativeinventoryStacksByType": {
+    "*-up": [
+      {
+        "tabs": [
+          "general",
+          "decorative"
+        ],
+        "stacks": [
+          {
+            "type": "block",
+            "code": "mc:candlelabra-{metal}-up",
+            "attributes": {
+              "material": "{metal}"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "sounds": {
+    "hit": "game:block/anvil",
+    "break": "game:block/anvil",
+    "place": "game:block/anvil"
+  },
+  "blockmaterial": "Metal",
+  "lightAbsorption": 0,
+  "lightHsv": [
+    7,
+    7,
+    14
+  ],
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "replaceable": 500,
+  "resistance": 1,
+  "particleProperties": [
+    {
+      "__comment": "Fire quads",
+      "hsvaColor": [
+        {
+          "avg": 20,
+          "var": 20
+        },
+        {
+          "avg": 255,
+          "var": 50
+        },
+        {
+          "avg": 255,
+          "var": 50
+        },
+        {
+          "avg": 255,
+          "var": 0
+        }
+      ],
+      "opacityEvolve": {
+        "transform": "quadratic",
+        "factor": -16
+      },
+      "gravityEffect": {
+        "avg": 0,
+        "var": 0
+      },
+      "velocity": [
+        {
+          "avg": 0,
+          "var": 0.0
+        },
+        {
+          "avg": 0.03,
+          "var": 0.01
+        },
+        {
+          "avg": 0,
+          "var": 0.0
+        }
+      ],
+      "quantity": {
+        "avg": 0.1
+      },
+      "size": {
+        "avg": 0.05,
+        "var": 0.025
+      },
+      "lifeLength": {
+        "avg": 0.5
+      },
+      "sizeEvolve": {
+        "transform": "linear",
+        "factor": 0.1
+      },
+      "posOffset": [
+        {
+          "avg": 0.0,
+          "var": 0.05
+        },
+        {
+          "avg": 0.2,
+          "var": 0
+        },
+        {
+          "avg": 0.0,
+          "var": 0.05
+        }
+      ],
+      "particleModel": "Quad",
+      "vertexFlags": 128,
+      "windAffectednes": 0.05
+    }
+  ],
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.29,
+      "y": -0.1,
+      "z": 0
+    },
+    "scale": 2
+  },
+  "guiTransform": {
+    "origin": {
+      "x": 0.5,
+      "y": 0.4,
+      "z": 0.5
+    },
+    "scale": 1.5
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.84,
+      "y": -0.16,
+      "z": -0.59
+    },
+    "rotation": {
+      "x": -115,
+      "y": 0,
+      "z": -89
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.1,
+      "z": 0.5
+    },
+    "scale": 0.66
+  },
+  "tpOffHandTransform": {
+    "translation": {
+      "x": -0.92,
+      "y": -0.26,
+      "z": -0.97
+    },
+    "rotation": {
+      "x": -62,
+      "y": 0,
+      "z": -89
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.1,
+      "z": 0.5
+    },
+    "scale": 0.66
+  },
+  "groundTransform": {
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 2
+  },
+  "selectionboxbytype": {
+    "*-up": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 0.75,
+      "z2": 0.75
+    },
+    "*-east": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.5,
+      "x2": 0.75,
+      "y2": 0.875,
+      "z2": 1,
+      "rotateY": 270
+    },
+    "*-south": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.5,
+      "x2": 0.75,
+      "y2": 0.875,
+      "z2": 1,
+      "rotateY": 180
+    },
+    "*-west": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.5,
+      "x2": 0.75,
+      "y2": 0.875,
+      "z2": 1,
+      "rotateY": 90
+    },
+    "*-north": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.5,
+      "x2": 0.75,
+      "y2": 0.875,
+      "z2": 1,
+      "rotateY": 0
+    }
+  },
+  "collisionboxbytype": {
+    "*-up": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.6875,
+      "y2": 0.75,
+      "z2": 0.75
+    },
+    "*-down": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 1,
+      "z2": 0.75
+    },
+    "*-east": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 0.875,
+      "z2": 1,
+      "rotateY": 270
+    },
+    "*-south": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 0.875,
+      "z2": 1,
+      "rotateY": 180
+    },
+    "*-west": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 0.875,
+      "z2": 1,
+      "rotateY": 90
+    },
+    "*-north": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 0.875,
+      "z2": 1,
+      "rotateY": 0
+    }
+  }
+}

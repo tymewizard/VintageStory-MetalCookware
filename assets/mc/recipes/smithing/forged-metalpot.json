@@ -1,0 +1,50 @@
+[
+  {
+    "ingredient": {
+      "type": "item",
+      "code": "game:ingot-*",
+      "name": "metal",
+      "allowedVariants": [
+        "iron",
+        "meteoriciron",
+        "steel",
+        "titanium"
+      ]
+    },
+    "pattern": [
+      [
+        "_______",
+        "_#####_",
+        "_#####_",
+        "_#####_",
+        "_#####_",
+        "_#####_",
+        "_______"
+      ],
+      [
+        "#######",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#######"
+      ],
+      [
+        "#######",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#######"
+      ]
+    ],
+    "name": "mc-forged-metalpot",
+    "code": "mc-forged-metalpot-{metal}",
+    "output": {
+      "type": "block",
+      "code": "mc:metalpot-{metal}-empty"
+    }
+  }
+]

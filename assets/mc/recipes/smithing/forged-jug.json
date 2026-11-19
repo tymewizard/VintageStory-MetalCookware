@@ -1,0 +1,41 @@
+[
+  {
+    "ingredient": {
+      "type": "item",
+      "code": "game:ingot-*",
+      "name": "metal",
+      "allowedVariants": [
+        "iron",
+        "meteoriciron",
+        "steel",
+        "titanium"
+      ]
+    },
+    "pattern": [
+      [
+        "#######",
+        "#######",
+        "#######",
+        "#######",
+        "#######",
+        "#######",
+        "#######"
+      ],
+      [
+        "#######",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#_____#",
+        "#######"
+      ]
+    ],
+    "name": "mc-forged-jug",
+    "code": "mc-forged-jug-{metal}",
+    "output": {
+      "type": "block",
+      "code": "mc:jug-{metal}"
+    }
+  }
+]

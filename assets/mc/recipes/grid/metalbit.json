@@ -1,0 +1,140 @@
+[
+  {
+    "ingredientPattern": "C,I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "mc:candlelabra-*-up",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 55
+    }
+  },
+  {
+    "ingredientPattern": "C,I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "mc:candlelamp-*-up",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 5
+    }
+  },
+  {
+    "ingredientPattern": "C,I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "mc:crock-*",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 15
+    }
+  },
+  {
+    "ingredientPattern": "C,I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "mc:crocklid-*",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 5
+    }
+  },
+  {
+    "ingredientPattern": "C,I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "mc:crockbase-*",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 10
+    }
+  },
+  {
+    "ingredientPattern": "C,I",
+    "recipeGroup": 5,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:chisel-*",
+        "isTool": true
+      },
+      "I": {
+        "type": "block",
+        "code": "mc:jug-*",
+        "name": "metal"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "game:metalbit-{metal}",
+      "quantity": 20
+    }
+  }
+]

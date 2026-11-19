@@ -1,0 +1,237 @@
+{
+  "code": "bowl-meal",
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.125,
+          "z2": 1
+        }
+      }
+    },
+    {
+      "name": "Unplaceable",
+      "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+    },
+    {
+      "name": "RightClickPickup"
+    }
+  ],
+  "class": "BlockMeal",
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "iron",
+        "meteoriciron",
+        "steel",
+        "titanium",
+        "bismuth",
+        "brass",
+        "copper",
+        "cupronickel",
+        "nickel",
+        "electrum",
+        "gold",
+        "silver"
+      ]
+    }
+  ],
+  "attributes": {
+    "shelvable": true,
+    "eatenBlock": "mc:bowl-{metal}",
+    "handleCookingContainerInteract": true
+  },
+  "entityClass": "Meal",
+  "heldTpIdleAnimation": "holdbothhands",
+  "shapeByType": {
+    "*-iron": {
+      "base": "mc:block/metal/bowl-empty-ground-iron"
+    },
+    "*-meteoriciron": {
+      "base": "mc:block/metal/bowl-empty-ground-meteoriciron"
+    },
+    "*-steel": {
+      "base": "mc:block/metal/bowl-empty-ground-steel"
+    },
+    "*-titanium": {
+      "base": "mc:block/metal/bowl-empty-ground-titanium"
+    },
+    "*-bismuth": {
+      "base": "mc:block/metal/bowl-empty-ground-bismuth"
+    },
+    "*-brass": {
+      "base": "mc:block/metal/bowl-empty-ground-brass"
+    },
+    "*-copper": {
+      "base": "mc:block/metal/bowl-empty-ground-copper"
+    },
+    "*-cupronickel": {
+      "base": "mc:block/metal/bowl-empty-ground-cupronickel"
+    },
+    "*-nickel": {
+      "base": "mc:block/metal/bowl-empty-ground-nickel"
+    },
+    "*-electrum": {
+      "base": "mc:block/metal/bowl-empty-ground-electrum"
+    },
+    "*-gold": {
+      "base": "mc:block/metal/bowl-empty-ground-gold"
+    },
+    "*-silver": {
+      "base": "mc:block/metal/bowl-empty-ground-silver"
+    }
+  },
+  "doNotRenderAtLod2": true,
+  "blockmaterial": "Metal",
+  "creativeinventory": {
+    "general": [
+      ""
+    ],
+    "decorative": [
+      ""
+    ]
+  },
+  "replaceable": 300,
+  "resistance": 0.75,
+  "maxStackSize": 1,
+  "lightAbsorption": 0,
+  "sounds": {
+    "walk": "game:walk/metal"
+  },
+  "texturesByType": {
+    "*": {
+      "transparent": {
+        "base": "game:block/transparent"
+      },
+      "mat": {
+        "base": "game:block/metal/ingot/{metal}"
+      },
+      "floor": {
+        "base": "game:block/metal/ingot/{metal}",
+        "overlays": [
+          "game:block/slightlydarker"
+        ]
+      }
+    },
+    "*-iron": {
+      "metal": {
+        "base": "mc:block/metal/pot/iron"
+      },
+      "mat": {
+        "base": "mc:block/metal/pot/iron"
+      },
+      "floor": {
+        "base": "mc:block/metal/pot/iron"
+      }
+    },
+    "*-meteoriciron": {
+      "metal": {
+        "base": "mc:block/metal/pot/meteoriciron"
+      },
+      "mat": {
+        "base": "mc:block/metal/pot/meteoriciron"
+      },
+      "floor": {
+        "base": "mc:block/metal/pot/meteoriciron"
+      }
+    },
+    "*-steel": {
+      "metal": {
+        "base": "mc:block/metal/pot/steel"
+      },
+      "mat": {
+        "base": "mc:block/metal/pot/steel"
+      },
+      "floor": {
+        "base": "mc:block/metal/pot/steel"
+      }
+    },
+    "*-titanium": {
+      "metal": {
+        "base": "mc:block/metal/pot/titanium"
+      },
+      "mat": {
+        "base": "mc:block/metal/pot/titanium"
+      },
+      "floor": {
+        "base": "mc:block/metal/pot/titanium"
+      }
+    }
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.3125,
+    "y1": 0,
+    "z1": 0.3125,
+    "x2": 0.6875,
+    "y2": 0.125,
+    "z2": 0.6875
+  },
+  "selectionbox": {
+    "x1": 0.3125,
+    "y1": 0,
+    "z1": 0.3125,
+    "x2": 0.6875,
+    "y2": 0.125,
+    "z2": 0.6875
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 3,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.0625,
+      "z": 0.5
+    },
+    "scale": 3
+  },
+  "groundTransform": {
+    "scale": 3.5
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0.4,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": -14,
+      "z": 0
+    },
+    "scale": 2
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.84,
+      "y": -0.2,
+      "z": -0.58
+    },
+    "rotation": {
+      "x": 90,
+      "y": 0,
+      "z": -60
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.1,
+      "z": 0.5
+    },
+    "scale": 0.66
+  }
+}

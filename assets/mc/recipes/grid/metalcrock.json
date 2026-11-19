@@ -1,0 +1,242 @@
+[
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-iron"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-iron"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-iron"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-meteoriciron"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-meteoriciron"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-meteoriciron"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-steel"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-steel"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-steel"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-titanium"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-titanium"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-titanium"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-bismuth"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-bismuth"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-bismuth"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-brass"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-brass"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-brass"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-copper"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-copper"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-copper"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-cupronickel"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-cupronickel"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-cupronickel"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-nickel"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-nickel"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-nickel"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-electrum"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-electrum"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-electrum"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-gold"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-gold"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-gold"
+    }
+  },
+  {
+    "ingredientPattern": "BL",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "mc:crockbase-silver"
+      },
+      "L": {
+        "type": "block",
+        "code": "mc:crocklid-silver"
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "output": {
+      "type": "block",
+      "code": "mc:crock-silver"
+    }
+  }
+]

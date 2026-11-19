@@ -1,0 +1,37 @@
+[
+  {
+    "ingredient": {
+      "type": "item",
+      "code": "game:ingot-*",
+      "name": "metal",
+      "allowedVariants": [
+        "iron",
+        "meteoriciron",
+        "steel",
+        "titanium"
+      ]
+    },
+    "pattern": [
+      [
+        "#####",
+        "#####",
+        "#####",
+        "#####",
+        "#####"
+      ],
+      [
+        "_____",
+        "_###_",
+        "_###_",
+        "_###_",
+        "_____"
+      ]
+    ],
+    "name": "mc-forged-crocklid",
+    "code": "mc-forged-crocklid-{metal}",
+    "output": {
+      "type": "block",
+      "code": "mc:crocklid-{metal}"
+    }
+  }
+]

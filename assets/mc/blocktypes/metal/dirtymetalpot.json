@@ -1,0 +1,550 @@
+{
+  "code": "dirtymetalpot",
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "SingleCenter",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.4375,
+          "z2": 1
+        }
+      }
+    },
+    {
+      "name": "Unplaceable",
+      "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+    }
+  ],
+  "classByType": {
+    "dirtymetalpot-*-empty": "MCBlockCookingContainer",
+    "dirtymetalpot-*-cooked": "MCBlockCookedContainer"
+  },
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "attributesByType": {
+    "*": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 24,
+      "cookingSlotCapacityLitres": 24,
+      "servingCapacity": 24,
+      "maxServingSize": 24,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-bismuth-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 20,
+      "cookingSlotCapacityLitres": 20,
+      "servingCapacity": 20,
+      "maxServingSize": 20,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-bismuth-cooked": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 20,
+      "cookingSlotCapacityLitres": 20,
+      "servingCapacity": 20,
+      "maxServingSize": 20,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-brass-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 28,
+      "cookingSlotCapacityLitres": 28,
+      "servingCapacity": 28,
+      "maxServingSize": 28,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-brass-cooked": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 28,
+      "cookingSlotCapacityLitres": 28,
+      "servingCapacity": 28,
+      "maxServingSize": 28,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-copper-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 20,
+      "cookingSlotCapacityLitres": 20,
+      "servingCapacity": 20,
+      "maxServingSize": 20,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-copper-cooked": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 20,
+      "cookingSlotCapacityLitres": 20,
+      "servingCapacity": 20,
+      "maxServingSize": 20,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-nickel-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 28,
+      "cookingSlotCapacityLitres": 28,
+      "servingCapacity": 28,
+      "maxServingSize": 28,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-nickel-cooked": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 28,
+      "cookingSlotCapacityLitres": 28,
+      "servingCapacity": 28,
+      "maxServingSize": 28,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-cupronickel-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 32,
+      "cookingSlotCapacityLitres": 32,
+      "servingCapacity": 32,
+      "maxServingSize": 32,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-cupronickel-cooked": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 32,
+      "cookingSlotCapacityLitres": 32,
+      "servingCapacity": 32,
+      "maxServingSize": 32,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-electrum-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 32,
+      "cookingSlotCapacityLitres": 32,
+      "servingCapacity": 32,
+      "maxServingSize": 32,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-electrum-cooked": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 32,
+      "cookingSlotCapacityLitres": 32,
+      "servingCapacity": 32,
+      "maxServingSize": 32,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-gold-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 36,
+      "cookingSlotCapacityLitres": 36,
+      "servingCapacity": 36,
+      "maxServingSize": 36,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-gold-cooked": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 36,
+      "cookingSlotCapacityLitres": 36,
+      "servingCapacity": 36,
+      "maxServingSize": 36,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-silver-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 36,
+      "cookingSlotCapacityLitres": 36,
+      "servingCapacity": 36,
+      "maxServingSize": 36,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    },
+    "dirtymetalpot-silver-cooked": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 36,
+      "cookingSlotCapacityLitres": 36,
+      "servingCapacity": 36,
+      "maxServingSize": 36,
+      "storageType": 1,
+      "maxTemperature": 250,
+      "inFirePitProps": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0
+          }
+        },
+        "useFirepitModel": "Wide"
+      },
+      "mealContainer": true,
+      "mealBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "emptiedBlockCode": "mc:dirtymetalpot-{metal}-empty",
+      "isDirtyPot": true
+    }
+  },
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "iron",
+        "meteoriciron",
+        "steel",
+        "titanium",
+        "bismuth",
+        "brass",
+        "copper",
+        "nickel",
+        "cupronickel",
+        "electrum",
+        "gold",
+        "silver"
+      ]
+    },
+    {
+      "code": "type",
+      "states": [
+        "empty",
+        "cooked"
+      ]
+    }
+  ],
+  "entityclassByType": {
+    "*-cooked": "CookedContainer"
+  },
+  "shape": {
+    "base": "mc:block/metal/dirty-metalpot-opened-empty"
+  },
+  "doNotRenderAtLod2": true,
+  "blockmaterial": "Metal",
+  "creativeinventory": {
+    "general": [
+      "dirtymetalpot-*-empty"
+    ],
+    "decorative": [
+      "dirtymetalpot-*-empty"
+    ]
+  },
+  "maxStackSize": 4,
+  "replaceable": 400,
+  "resistance": 1.5,
+  "lightAbsorption": 0,
+  "texturesByType": {
+    "*": {
+      "transparent": {
+        "base": "game:block/transparent"
+      },
+      "ceramic": {
+        "base": "mc:block/metal/pot/{metal}"
+      },
+      "metal": {
+        "base": "mc:block/metal/pot/{metal}"
+      },
+      "metal2": {
+        "base": "mc:block/metal/pot/{metal}"
+      },
+      "lid-dirty2": {
+        "base": "mc:block/metal/pot/{metal}"
+      },
+      "liquid": {
+        "base": "game:block/liquid/glue-cold"
+      }
+    }
+  },
+  "sounds": {
+    "walk": "walk/stone"
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.28,
+    "y1": 0,
+    "z1": 0.28,
+    "x2": 0.72,
+    "y2": 0.35,
+    "z2": 0.72
+  },
+  "selectionbox": {
+    "x1": 0.28,
+    "y1": 0,
+    "z1": 0.28,
+    "x2": 0.72,
+    "y2": 0.35,
+    "z2": 0.72
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.7,
+      "y": 0.06,
+      "z": -0.47
+    },
+    "rotation": {
+      "x": -52,
+      "y": 20,
+      "z": -110
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 0.6
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "file": "game:itemtypes/resource/ingot.json",
+    "op": "add",
+    "path": "/attributes/workableTemperatureByType/ingot-titanium",
+    "value": 1000,
+    "dependsOn": [
+      {
+        "modid": "em"
+      }
+    ]
+  },
+  {
+    "file": "game:itemtypes/resource/ingot.json",
+    "op": "add",
+    "path": "/attributes/requiresAnvilTierByType/ingot-titanium",
+    "value": 3,
+    "dependsOn": [
+      {
+        "modid": "em"
+      }
+    ]
+  }
+]

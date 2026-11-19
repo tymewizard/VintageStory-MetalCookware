@@ -1,0 +1,127 @@
+{
+  "code": "metalwateringcan",
+  "class": "BlockWateringCan",
+  "entityClass": "WateringCan",
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "iron",
+        "meteoriciron",
+        "steel",
+        "titanium",
+        "bismuth",
+        "brass",
+        "copper",
+        "nickel",
+        "cupronickel",
+        "electrum",
+        "gold",
+        "silver"
+      ]
+    }
+  ],
+  "shape": {
+    "base": "mc:block/metal/metalwateringcan"
+  },
+  "textures": {
+    "watering-can": {
+      "base": "mc:block/metal/wateringcan/{metal}"
+    },
+    "wateringcanup": {
+      "base": "mc:block/metal/wateringcan/{metal}"
+    },
+    "wateringcanrose": {
+      "base": "mc:block/metal/wateringcanrose/{metal}"
+    }
+  },
+  "attributes": {
+    "capacitySeconds": 57.6,
+    "capacityLitres": 9,
+    "handbook": {
+      "groupBy": [
+        "metalwateringcan-{metal}"
+      ],
+      "extraSections": [
+        {
+          "title": "mc:handbooktitle-capacity",
+          "text": "mc:handbooktext-watercapacity"
+        }
+      ]
+    }
+  },
+  "attributesByType": {
+    "metalwateringcan-copper": {
+      "capacitySeconds": 44.8,
+      "capacityLitres": 7
+    },
+    "metalwateringcan-bismuth": {
+      "capacitySeconds": 44.8,
+      "capacityLitres": 7
+    },
+    "metalwateringcan-brass": {
+      "capacitySeconds": 70.4,
+      "capacityLitres": 11
+    },
+    "metalwateringcan-nickel": {
+      "capacitySeconds": 70.4,
+      "capacityLitres": 11
+    },
+    "metalwateringcan-cupronickel": {
+      "capacitySeconds": 83.2,
+      "capacityLitres": 13
+    },
+    "metalwateringcan-electrum": {
+      "capacitySeconds": 83.2,
+      "capacityLitres": 13
+    },
+    "metalwateringcan-silver": {
+      "capacitySeconds": 96.0,
+      "capacityLitres": 15
+    },
+    "metalwateringcan-gold": {
+      "capacitySeconds": 96.0,
+      "capacityLitres": 15
+    },
+    "metalwateringcan-iron": {
+      "capacityLitres": 12,
+      "capacitySeconds": 76.8
+    },
+    "metalwateringcan-meteoriciron": {
+      "capacityLitres": 14,
+      "capacitySeconds": 89.6
+    },
+    "metalwateringcan-steel": {
+      "capacityLitres": 16,
+      "capacitySeconds": 102.4
+    },
+    "metalwateringcan-titanium": {
+      "capacityLitres": 18,
+      "capacitySeconds": 115.2
+    }
+  },
+  "blockmaterial": "Metal",
+  "creativeinventory": {
+    "general": [
+      "*"
+    ]
+  },
+  "maxStackSize": 1,
+  "drawtype": "json",
+  "replaceable": 400,
+  "resistance": 1.5,
+  "sounds": {
+    "place": "game:block/metal",
+    "break": "game:block/metal"
+  },
+  "lightAbsorption": 0,
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "emitsideao": {
+    "all": false
+  }
+}

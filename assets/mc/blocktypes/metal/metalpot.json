@@ -1,0 +1,469 @@
+{
+  "code": "metalpot",
+  "classByType": {
+    "metalpot-*-empty": "MCBlockCookingContainer",
+    "metalpot-*-cooked": "MCBlockCookedContainer"
+  },
+  "entityclassByType": {
+    "*-cooked": "CookedContainer"
+  },
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "SingleCenter",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.4375,
+          "z2": 1
+        }
+      }
+    },
+    {
+      "name": "Unplaceable",
+      "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+    }
+  ],
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "iron",
+        "meteoriciron",
+        "steel",
+        "titanium",
+        "bismuth",
+        "brass",
+        "copper",
+        "nickel",
+        "cupronickel",
+        "electrum",
+        "gold",
+        "silver"
+      ]
+    },
+    {
+      "code": "type",
+      "states": [
+        "empty",
+        "cooked"
+      ]
+    }
+  ],
+  "shape": {
+    "base": "mc:block/metal/metalpot-opened-empty"
+  },
+  "textures": {
+    "transparent": {
+      "base": "game:block/transparent"
+    },
+    "ceramic": {
+      "base": "mc:block/metal/pot/{metal}"
+    },
+    "metal": {
+      "base": "mc:block/metal/pot/{metal}"
+    },
+    "group1": {
+      "base": "game:block/food/meal/group1-flax-carrot-blueberry-cottagecheese-fish"
+    },
+    "group2": {
+      "base": "game:block/food/meal/group2-soup-flyagaric-cactifruit-redmeat"
+    },
+    "group3": {
+      "base": "game:block/food/meal/group3-millet-bolete-cranberry-poultry"
+    },
+    "group4": {
+      "base": "game:block/food/meal/group4-rice-parsnip-whitecurrant-bluecheese-fishstew"
+    },
+    "group5": {
+      "base": "game:block/food/meal/group5-rye-turnip-blackcurrant-cheddarcheese-poultrystew"
+    },
+    "group6": {
+      "base": "game:block/food/meal/group6-spelt-onion-redcurrant-egg-redmeatstew"
+    },
+    "group7": {
+      "base": "game:block/food/meal/group7-honey-fieldmushroom-pineapple-scrambledegg-bushmeat"
+    },
+    "group8": {
+      "base": "game:block/food/meal/group8-amaranth-pumpkin-bellpepper-bushmeatstew"
+    },
+    "group9": {
+      "base": "game:block/food/meal/group9-sunflower-soya"
+    },
+    "group10": {
+      "base": "game:block/food/meal/group10-cabbage"
+    },
+    "group11": {
+      "base": "game:block/food/meal/group11-cassava"
+    },
+    "group12": {
+      "base": "game:block/food/meal/group12-peanut"
+    },
+    "group13": {
+      "base": "game:block/food/meal/group13-aubergine"
+    },
+    "group14": {
+      "base": "game:block/food/meal/group14-tomato"
+    },
+    "group15": {
+      "base": "game:block/food/meal/group15-walnut"
+    },
+    "group17": {
+      "base": "game:block/food/meal/group17-olive"
+    },
+    "honey": {
+      "base": "game:block/liquid/honey"
+    },
+    "fruit-redapple": {
+      "base": "game:block/food/pie/fill-apple"
+    },
+    "fruit-pinkapple": {
+      "base": "game:block/food/pie/fill-apple"
+    },
+    "fruit-yellowapple": {
+      "base": "game:block/food/pie/fill-apple"
+    },
+    "fruit-cherry": {
+      "base": "game:block/food/pie/fill-cherry"
+    },
+    "fruit-peach": {
+      "base": "game:block/food/pie/fill-peach"
+    },
+    "fruit-pear": {
+      "base": "game:block/food/pie/fill-pear"
+    },
+    "fruit-orange": {
+      "base": "game:block/food/pie/fill-orange"
+    },
+    "fruit-mango": {
+      "base": "game:block/food/pie/fill-mango"
+    },
+    "fruit-pomegranate": {
+      "base": "game:block/food/pie/fill-pomegranate"
+    },
+    "fruit-lychee": {
+      "base": "game:block/food/pie/fill-lychee"
+    },
+    "fruit-breadfruit": {
+      "base": "game:block/food/pie/fill-breadfruit"
+    },
+    "rot-solids": {
+      "base": "game:item/resource/rot/rot-solids"
+    },
+    "rot-spill": {
+      "base": "game:item/resource/rot/rot-spill"
+    },
+    "milkportion": {
+      "base": "game:block/food/dairy/milk"
+    },
+    "cottagecheeseportion": {
+      "base": "game:block/food/dairy/cottagecheese"
+    },
+    "glue-hot": {
+      "base": "game:block/liquid/glue-hot"
+    },
+    "glue-cold": {
+      "base": "game:block/liquid/glue-cold"
+    }
+  },
+  "attributes": {
+    "tempGlowMode": 1,
+    "mealContainer": true,
+    "servingCapacity": 24,
+    "maxServingSize": 24,
+    "storageType": 1,
+    "maxTemperature": 200,
+    "mealBlockCode": "mc:metalpot-{metal}-cooked",
+    "wearableAttachment": true,
+    "wearableCategoryCode": "frontrightside",
+    "attachableToEntity": {
+      "texturePrefixCode": "mc:metalpot-{metal}-{type}",
+      "categoryCode": "pot",
+      "attachedShapeBySlotCode": {
+        "frontrightside": {
+          "base": "mc:item/wearable/hooved/metalcookpotr-elk"
+        },
+        "frontleftside": {
+          "base": "mc:item/wearable/hooved/metalcookpotl-elk"
+        }
+      }
+    },
+    "inFirePitProps": {
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 0.125,
+          "z": 0
+        }
+      },
+      "useFirepitModel": "Wide"
+    },
+    "handbook": {
+      "extraSections": [
+        {
+          "title": "mc:handbooktitle-capacity",
+          "text": "mc:handbooktext-potcapacity"
+        }
+      ]
+    }
+  },
+  "attributesByType": {
+    "metalpot-*-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 24,
+      "cookingSlotCapacityLitres": 24,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked"
+    },
+    "metalpot-*-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true
+    },
+    "metalpot-iron-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 28,
+      "cookingSlotCapacityLitres": 28,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked"
+    },
+    "metalpot-iron-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 28
+    },
+    "metalpot-meteoriciron-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 30,
+      "cookingSlotCapacityLitres": 30,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked"
+    },
+    "metalpot-meteoriciron-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 30
+    },
+    "metalpot-steel-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 32,
+      "cookingSlotCapacityLitres": 32,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked"
+    },
+    "metalpot-steel-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 32
+    },
+    "metalpot-titanium-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 36,
+      "cookingSlotCapacityLitres": 36,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked"
+    },
+    "metalpot-titanium-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 36
+    },
+    "metalpot-bismuth-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 20,
+      "cookingSlotCapacityLitres": 20,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "servingCapacity": 20,
+      "maxServingSize": 20
+    },
+    "metalpot-bismuth-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 20,
+      "maxServingSize": 20
+    },
+    "metalpot-brass-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 28,
+      "cookingSlotCapacityLitres": 28,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "servingCapacity": 28,
+      "maxServingSize": 28
+    },
+    "metalpot-brass-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 28,
+      "maxServingSize": 28
+    },
+    "metalpot-copper-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 20,
+      "cookingSlotCapacityLitres": 20,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "servingCapacity": 20,
+      "maxServingSize": 20
+    },
+    "metalpot-copper-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 20,
+      "maxServingSize": 20
+    },
+    "metalpot-nickel-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 28,
+      "cookingSlotCapacityLitres": 28,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "servingCapacity": 28,
+      "maxServingSize": 28
+    },
+    "metalpot-nickel-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 28,
+      "maxServingSize": 28
+    },
+    "metalpot-cupronickel-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 32,
+      "cookingSlotCapacityLitres": 32,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "servingCapacity": 32,
+      "maxServingSize": 32
+    },
+    "metalpot-cupronickel-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 32,
+      "maxServingSize": 32
+    },
+    "metalpot-electrum-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 32,
+      "cookingSlotCapacityLitres": 32,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "servingCapacity": 32,
+      "maxServingSize": 32
+    },
+    "metalpot-electrum-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 32,
+      "maxServingSize": 32
+    },
+    "metalpot-gold-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 36,
+      "cookingSlotCapacityLitres": 36,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "servingCapacity": 36,
+      "maxServingSize": 36
+    },
+    "metalpot-gold-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 36,
+      "maxServingSize": 36
+    },
+    "metalpot-silver-empty": {
+      "cookingContainerSlots": 4,
+      "maxContainerSlotStackSize": 36,
+      "cookingSlotCapacityLitres": 36,
+      "dirtiedBlockCode": "mc:dirtymetalpot-{metal}-cooked",
+      "servingCapacity": 36,
+      "maxServingSize": 36
+    },
+    "metalpot-silver-cooked": {
+      "mealContainer": true,
+      "emptiedBlockCode": "mc:metalpot-{metal}-empty",
+      "allowHeating": true,
+      "handleCookingContainerInteract": true,
+      "servingCapacity": 36,
+      "maxServingSize": 36
+    }
+  },
+  "doNotRenderAtLod2": true,
+  "blockmaterial": "Metal",
+  "creativeinventory": {
+    "general": [
+      "metalpot-*-empty"
+    ],
+    "decorative": [
+      "metalpot-*-empty"
+    ]
+  },
+  "replaceable": 400,
+  "resistance": 1.5,
+  "maxStackSizeByType": {
+    "*-cooked": 1,
+    "*": 4
+  },
+  "lightAbsorption": 0,
+  "sounds": {
+    "walk": "game:walk/stone"
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.28,
+    "y1": 0,
+    "z1": 0.28,
+    "x2": 0.72,
+    "y2": 0.35,
+    "z2": 0.72
+  },
+  "selectionbox": {
+    "x1": 0.28,
+    "y1": 0,
+    "z1": 0.28,
+    "x2": 0.72,
+    "y2": 0.35,
+    "z2": 0.72
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.7,
+      "y": 0.06,
+      "z": -0.47
+    },
+    "rotation": {
+      "x": -52,
+      "y": 20,
+      "z": -110
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 0.6
+  }
+}

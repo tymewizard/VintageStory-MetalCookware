@@ -1,0 +1,37 @@
+[
+  {
+    "ingredient": {
+      "type": "item",
+      "code": "game:ingot-*",
+      "name": "metal",
+      "allowedVariants": [
+        "iron",
+        "meteoriciron",
+        "steel",
+        "titanium"
+      ]
+    },
+    "pattern": [
+      [
+        "#####",
+        "#####",
+        "#####",
+        "#####",
+        "#####"
+      ],
+      [
+        "#####",
+        "#___#",
+        "#___#",
+        "#___#",
+        "#####"
+      ]
+    ],
+    "name": "mc-forged-bowl",
+    "code": "mc-forged-bowl-{metal}",
+    "output": {
+      "type": "block",
+      "code": "mc:bowl-{metal}"
+    }
+  }
+]
